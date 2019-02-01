@@ -1,5 +1,5 @@
 :root {
-	--turkey: #FFF0EB;
+	--grey: #EEEEEE;
 	--white: white;
 	--blue: blue;
 }
@@ -19,7 +19,7 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: var(--white);
 }
 
 main {
@@ -81,13 +81,13 @@ ul {
 hr {
 	border-top: none;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid var(--grey);
 }
 
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
-	font-size: 2em;
+	font-size: 1em;
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
@@ -117,7 +117,7 @@ article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid var(--grey);
 }
 
 main > section > article > * {
@@ -136,8 +136,8 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
 	line-height: 2em;
 	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
+  border: 1px solid var(--grey);
+	background-color: var(--grey);
 	color: var(--blue);
   border-radius: .25em;
   text-decoration: none;
