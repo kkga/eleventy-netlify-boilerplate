@@ -78,6 +78,12 @@ ul {
 	list-style: none;
 }
 
+hr {
+	border-top: none;
+	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid var(--white);
+}
+
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
