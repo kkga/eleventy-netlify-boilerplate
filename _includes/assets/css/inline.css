@@ -93,7 +93,7 @@ header nav li {
 	margin: 0 .5em;
 }
 
-header nav li a:not(:hover) {
+header nav li a {
     color: var(--darkgrey);
 }
 
