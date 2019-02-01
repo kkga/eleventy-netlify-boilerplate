@@ -8,8 +8,6 @@ tags:
 ---
 ![my face](/static/img/face-dither.png "me")
 
-![](img/face-dither.png)
-
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
 ---
