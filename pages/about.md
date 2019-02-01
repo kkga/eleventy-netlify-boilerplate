@@ -59,7 +59,7 @@ In my early twenties I've played a lot of World of Warcraft — a multiplayer on
 
 ---
 
-## Contact
+#### Contact
 
 - [email][email]
 - [resume][resume]
