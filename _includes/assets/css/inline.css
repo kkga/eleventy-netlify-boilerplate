@@ -99,11 +99,13 @@ header nav li {
 
 header nav li a:not(:hover) {
     color: var(--darkgrey);
+    text-decoration: none;
 }
 
 header nav li a[data-current="current item"] {
 	font-weight: 700;
 	color: currentColor;
+	text-decoration: underline;
 }
 
 /* Posts List */
