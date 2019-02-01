@@ -103,7 +103,6 @@ header nav li a {
 
 header nav li a[data-current="current item"] {
 	font-weight: 700;
-	text-decoration: underline;
 	color: var(--black);
 	
 }
