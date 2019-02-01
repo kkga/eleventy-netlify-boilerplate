@@ -79,6 +79,10 @@ header > em {
 	font-style: normal;
 }
 
+header nail up {
+    padding: 0;
+}
+
 header nav ul :first-child {
 	margin-left: 0;
 }
@@ -86,10 +90,6 @@ header nav ul :first-child {
 header nav li {
 	display: inline-block;
 	margin: 0 .5em;
-}
-
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
 }
 
 header nav li a[data-current="current item"] {
