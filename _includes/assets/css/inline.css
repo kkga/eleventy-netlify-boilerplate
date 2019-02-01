@@ -1,6 +1,6 @@
 :root {
-	--grey: #EEEEEE;
-	--darkgrey: #999;
+	--grey: #EEE;
+	--darkgrey: #888;
 	--white: white;
 	--blue: blue;
 	--black: black;
@@ -28,9 +28,9 @@ main {
 	max-width: 37.5em;
 }
 
-a[href],
-a[href]:visited {
-	color: var(--black);
+a,
+a:visited {
+	color: currentColor;
 }
 
 header,
@@ -97,14 +97,13 @@ header nav li {
 	margin: 0 .5em;
 }
 
-header nav li a[href]:not(:hover) {
+header nav li a:not(:hover) {
     color: var(--darkgrey);
 }
 
 header nav li a[data-current="current item"] {
 	font-weight: 700;
-	color: var(--black);
-	
+	color: currentColor;
 }
 
 /* Posts List */
