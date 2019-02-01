@@ -48,6 +48,10 @@ main > article :first-child {
 	margin-top: 0;
 }
 
+small {
+    color: var(--darkgrey);
+}
+
 pre {
 	font-size: 14px;
 	direction: ltr;
