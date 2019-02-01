@@ -1,12 +1,12 @@
 ---
 title: About us
+date: 2017-01-01T00:00:00.000Z
+permalink: /about/index.html
+navtitle: About
 tags:
   - nav
-navtitle: About
-section: about
-date: 2017-01-01
-permalink: /about/index.html
 ---
+![my face](/static/img/face-dither.png "me")
 
 ![](img/face-dither.png)
 
