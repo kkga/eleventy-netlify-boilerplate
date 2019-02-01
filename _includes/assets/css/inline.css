@@ -1,5 +1,6 @@
 :root {
 	--grey: #EEEEEE;
+	--darkgrey: #999;
 	--white: white;
 	--blue: blue;
 	--black: black;
@@ -79,7 +80,7 @@ header > em {
 	font-style: normal;
 }
 
-header nail up {
+header nav ul {
     padding: 0;
 }
 
@@ -92,9 +93,15 @@ header nav li {
 	margin: 0 .5em;
 }
 
+header nav li a:not:hover {
+    color: var(--darkgrey);
+}
+
 header nav li a[data-current="current item"] {
 	font-weight: 700;
 	text-decoration: underline;
+	color: var(--black);
+	
 }
 
 /* Posts List */
