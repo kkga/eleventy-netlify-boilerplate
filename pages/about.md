@@ -1,11 +1,12 @@
 ---
-title: About us
+title: About me
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 navtitle: About
 tags:
   - nav
 ---
+
 ![my face](/static/img/face-dither.png "me")
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
