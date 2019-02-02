@@ -1,0 +1,28 @@
+
+@font-face {
+	font-family: 'Iosevka Slab Web';
+	font-weight: 400;
+	font-style: normal;
+	src: url('iosevka-slab-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Iosevka Slab Web';
+	font-weight: 400;
+	font-style: italic;
+	src: url('iosevka-slab-italic.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Iosevka Slab Web';
+	font-weight: 700;
+	font-style: normal;
+	src: url('iosevka-slab-bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Iosevka Slab Web';
+	font-weight: 700;
+	font-style: italic;
+	src: url('iosevka-slab-bolditalic.woff2') format('woff2');
+}
