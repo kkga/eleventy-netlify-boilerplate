@@ -1,7 +1,9 @@
 :root {
-	--grey: #EEEEEE;
+	--grey: #EEE;
+	--darkgrey: #888;
 	--white: white;
 	--blue: blue;
+	--black: black;
 	--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -13,25 +15,22 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: var(--font);
-	line-height: 1.5;
 }
 
 body {
 	background-color: var(--white);
+	font-family: var(--font);
+	line-height: 1.5;
+	color: var(--black);
 }
 
 main {
 	max-width: 37.5em;
 }
 
-a[href],
-a[href]:visited {
-	color: var(--blue);
-}
-
-a[href]:not(:hover) {
-	text-decoration: none;
+a,
+a:visited {
+	color: currentColor;
 }
 
 header,
@@ -47,6 +46,10 @@ main {
 main :first-child,
 main > article :first-child {
 	margin-top: 0;
+}
+
+small {
+    color: var(--darkgrey);
 }
 
 pre {
@@ -72,11 +75,6 @@ hr {
 	border-bottom: 1px solid var(--grey);
 }
 
-blockquote {
-	font-style: italic;
-}
-
-/* Header Logo (style as h2) */
 header > em {
 	display: block;
 	font-size: 1em;
@@ -85,10 +83,8 @@ header > em {
 	font-style: normal;
 }
 
-/* Header Nav */
 header nav ul {
-	padding: 0;
-	list-style: none;
+    padding: 0;
 }
 
 header nav ul :first-child {
@@ -100,12 +96,14 @@ header nav li {
 	margin: 0 .5em;
 }
 
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
+header nav li a:not(:hover) {
+    color: var(--darkgrey);
+    text-decoration: none;
 }
 
 header nav li a[data-current="current item"] {
 	font-weight: 700;
+	color: currentColor;
 	text-decoration: underline;
 }
 
@@ -147,38 +145,6 @@ a[rel="tag"]:hover {
 
 a[rel="tag"]:last-child {
 	margin-right: 0;
-}
-
-/* Contact Form */
-form {
-  display: grid;
-	padding: 2em 0;
-}
-
-form label {
-  display: none;
-}
-
-input,
-textarea,
-button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
-}
-
-input,
-textarea {
-	border: 1px solid black;
-}
-
-button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
 }
 
 /*@media screen and (min-width:768px) {
