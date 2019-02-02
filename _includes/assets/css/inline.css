@@ -14,6 +14,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: var(--font);
+	line-height: 1.5;
 }
 
 body {
@@ -22,12 +23,6 @@ body {
 
 main {
 	max-width: 37.5em;
-}
-
-p,
-pre,
-code {
-	line-height: 1.5;
 }
 
 a[href],
@@ -71,15 +66,14 @@ pre {
 	margin: .5em 0;
 }
 
-ul {
-	padding: 0;
-	list-style: none;
-}
-
 hr {
 	border-top: none;
 	border-bottom: 1px solid #eee;
 	border-bottom: 1px solid var(--grey);
+}
+
+blockquote {
+	font-style: italic;
 }
 
 /* Header Logo (style as h2) */
@@ -92,6 +86,11 @@ header > em {
 }
 
 /* Header Nav */
+header nav ul {
+	padding: 0;
+	list-style: none;
+}
+
 header nav ul :first-child {
 	margin-left: 0;
 }
@@ -127,16 +126,14 @@ main > section > article > * {
 a[rel="tag"],
 a[rel="tag"]:visited {
 	display: inline-block;
-  vertical-align: text-top;
   text-transform: uppercase;
 	letter-spacing: .1em;
   font-size: .625em;
-  padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
+  font-weight: bold;
+  padding: 0.15em .5em;
   border: 1px solid var(--grey);
 	background-color: var(--grey);
-	color: var(--blue);
+	color: currentColor;
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
