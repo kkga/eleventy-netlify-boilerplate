@@ -17,7 +17,9 @@
   --color-text-dim: var(--g-06);
   --color-divider: var(--g-09);
 
-  --font: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --font-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,7 +43,7 @@ body {
 
 body {
   background-color: var(--color-body);
-  font-family: var(--font);
+  font-family: var(--font-serif);
   line-height: 1.5;
   color: var(--color-text);
 }
@@ -50,8 +52,10 @@ h1,
 h2,
 h3,
 h4,
-h5 h6 {
+h5,
+h6 {
   font-size: 1em;
+  font-family: var(--font-sans);
 }
 h1 {
   text-transform: uppercase;
