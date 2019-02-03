@@ -1,0 +1,15 @@
+---
+title: Recently
+date: 2019-02-03T13:45:38.603Z
+summary: What I've been up to recently.
+tags:
+  - post
+  - recently
+---
+## Gamedev adventures
+
+I'm still working on the little puzzle game that I've been messing with for a few months already.
+It's a game about finding a path to the exit, but the movement can only be done in straigth lines until you hit an obstacle on the way. I've coded a bunch of different mechanisms that can interact with the player in different ways and are supposed to make the gameplay a bit more interesting.
+All the building pieces seem to work great on their own: moving the player is fun and the various mechanics feel nice to interact with. However, I'm stuck on building the actual levels -- it's easy to design a few introductory levels that teach the basic rules, but future levels get either to dull and simple or too chaotic.
+
+![Working on a game in Godot 3.1](/static/img/public-jpeg.jpeg)
