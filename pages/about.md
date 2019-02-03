@@ -16,31 +16,25 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
 ## Webflow, 2015–2018
 
 - **Grid**: A flexible layout mechanism with direct manipulation controls, built on top of CSS Grid.
-    - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
-    - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
-
+  - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
+  - [youtu.be/Z0TpdiMFVIk](https://youtu.be/Z0TpdiMFVIk) (demo video)
 - **Interactions**: A system allowing designers to visually create complex web interactions and animations without any coding skills.
-    - [webflow.com/ix2](https://webflow.com/ix2) (launch page, designed by [Ryan Morrison](https://ryry.io))
-    - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
-    - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
-
+  - [webflow.com/ix2](https://webflow.com/ix2) (launch page, designed by [Ryan Morrison](https://ryry.io))
+  - [webflow.com/interactions-animations](https://webflow.com/interactions-animations) (product overview)
+  - [youtu.be/RmTIx9I78QI](https://youtu.be/RmTIx9I78QI) (demo video)
 - **Flexbox**: Visual interface to CSS Flexbox mechanism allowing designers to create expressive, responsive layouts on the web.
-    - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
-    - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
+  - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
+  - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
 ---
 
 ## Stampsy, 2012–2014
 
 - Worked as a designer (and partly as a front-end engineer) at Stampsy — a web platform for sharing and discovering visual stories. I designed the product and built a modular CSS architecture behind it.
-
-    - [stampsy.com](https://stampsy.com/)
-    - [vimeo.com/199982837](https://vimeo.com/199982837) (product video)
-    - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
-
-### Stampsy iPad app, 2012–2013
-
-In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
+  - [stampsy.com](https://stampsy.com/)
+  - [vimeo.com/199982837](https://vimeo.com/199982837) (product video)
+  - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
+- In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
 
 ---
 

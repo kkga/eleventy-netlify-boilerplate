@@ -1,59 +1,84 @@
 :root {
-	--grey: #EEE;
-	--darkgrey: #707070;
-	--white: white;
-	--blue: blue;
-	--black: black;
-	--font: 
-	/*--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;*/
+  /* Verdandi Alter Colors */
+  --g-00: #050607;
+  --g-01: #111316;
+  --g-02: #1b1f23;
+  --g-03: #262b30;
+  --g-04: #323940;
+  --g-05: #424a52;
+  --g-06: #5b646c;
+  --g-07: #7e868d;
+  --g-08: #a1a8ae;
+  --g-09: #c0c5ca;
+  --g-10: #d6dade;
+
+  --color-body: var(--g-10);
+  --color-text: var(--g-01);
+  --color-text-dim: var(--g-06);
+  --color-divider: var(--g-09);
+
+  --font: "Iosevka Slab Web", monospace;
+  /* --font: "Input Sans Condensed", monospace; */
 }
 
-*, *:before, *:after {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: var(--g-02);
+    --color-text: var(--g-09);
+    --color-text-dim: var(--g-06);
+    --color-divider: var(--g-03);
+  }
+}
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 body {
-	margin: 1rem;
+  margin: 1rem;
 }
 
 body {
-	background-color: var(--white);
-	font-family: "Iosevka Slab Web", monospace;
-	line-height: 1.5;
-	color: var(--black);
+  background-color: var(--color-body);
+  font-family: var(--font);
+  line-height: 1.5;
+  color: var(--color-text);
 }
 
 h1,
 h2,
 h3,
 h4,
-h5
-h6 {
-	font-size: 1em;
-	text-transform: uppercase;
+h5 h6 {
+  font-size: 1em;
+}
+h1 {
+  text-transform: uppercase;
 }
 
 header,
 main,
 footer {
-	max-width: 40em;
-	max-width: 75ch;
-	margin: 0 auto;
+  max-width: 40em;
+  max-width: 75ch;
+  margin: 0 auto;
 }
 
 a,
 a:visited {
-	color: currentColor;
-	text-decoration-style: dotted;
-	-webkit-text-decoration-style: dotted;
+  color: currentColor;
+  text-decoration-style: dotted;
+  -webkit-text-decoration-style: dotted;
 }
 a:hover {
-	text-decoration-style: solid;
-	-webkit-text-decoration-style: solid;
+  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
 }
 
 main {
-	padding: 2em 0;
+  padding: 2em 0;
 }
 
 /*main :first-child,
@@ -62,85 +87,83 @@ main > article :first-child {
 }*/
 
 small {
-	color: var(--darkgrey);
-	/*text-transform: uppercase;*/
+  color: var(--color-text-dim);
+  text-transform: uppercase;
 }
 
 blockquote {
-	font-style: italic;
-	font-weight: bold;
-	margin-left: 0;
-	margin-right: 0;
-	color: var(--darkgrey);
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1em;
+  border-left: 4px solid var(--color-divider);
 }
 
 pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
+  font-size: 14px;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: 0.5em 0;
 }
 
 header,
 hr {
-	border-top: none;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--grey);
+  border: none;
+  border-bottom: 1px solid var(--color-divider);
 }
 
 header > em {
-	display: block;
-	font-size: 1em;
-	margin: .67em 0;
-	font-weight: bold;
-	font-style: normal;
+  display: block;
+  font-size: 1em;
+  margin: 0.67em 0;
+  font-weight: bold;
+  font-style: normal;
 }
 
 header nav ul {
-    padding: 0;
+  padding: 0;
 }
 
 header nav ul :first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 header nav li {
-	display: inline-block;
-	margin: 0 .5em;
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 header nav li a:not(:hover) {
-    color: var(--darkgrey);
-    text-decoration: none;
+  color: var(--color-text-dim);
+  text-decoration: none;
 }
 
 header nav li a[data-current="current item"] {
-	font-weight: 700;
-	color: currentColor;
-	text-decoration: underline;
+  font-weight: 700;
+  color: currentColor;
+  text-decoration: underline;
 }
 
 /* Posts List */
 article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--grey);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--color-divider);
 }
 
 main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 /* Post Tags */
@@ -150,7 +173,12 @@ a[rel="tag"]:visited {
 }
 
 a[rel="tag"]:hover {
-	color: var(--black);
+  color: var(--color-text);
+}
+
+/* Footer */
+footer > small {
+  text-transform: none;
 }
 
 /*@media screen and (min-width:768px) {
