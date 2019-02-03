@@ -3,6 +3,7 @@ title: About me
 date: 2019-02-02T00:00:00.000Z
 permalink: /about/index.html
 navtitle: About
+navorder: 1
 tags:
   - nav
 ---
@@ -38,7 +39,7 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
 
 - - -
 
-### Misc
+## Misc
 
 * At some point I designed a [UI theme](https://github.com/kkga/spacegray) for Sublime Text — a popular code editor. It's been installed by [~400k users](https://packagecontrol.io/packages/Theme%20-%20Spacegray) and has ~7k stars on GitHub.
 * During 2010–2012 I've freelanced and worked with various international startups, but most of the time I was posting [useless stuff](https://dribbble.com/gadzhi) on Dribbble.
