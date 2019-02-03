@@ -91,7 +91,7 @@ img {
 
 small {
   color: var(--color-text-dim);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 blockquote {
