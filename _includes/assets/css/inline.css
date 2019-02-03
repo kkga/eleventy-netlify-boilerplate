@@ -58,7 +58,12 @@ h6 {
   font-family: var(--font-sans);
 }
 h1 {
-  text-transform: uppercase;
+  font-size: 2em;
+}
+
+header,
+footer {
+  font-family: var(--font-sans);
 }
 
 header,
@@ -95,6 +100,7 @@ img {
 
 small {
   color: var(--color-text-dim);
+  font-family: var(--font-sans);
   /* text-transform: uppercase; */
 }
 
