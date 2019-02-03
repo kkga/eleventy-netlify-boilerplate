@@ -16,6 +16,8 @@
   --color-text: var(--g-01);
   --color-text-dim: var(--g-06);
   --color-divider: var(--g-09);
+  
+  --content-width: 40em;
 
   --font-serif: Charter, Georgia, serif;
   --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -62,6 +64,7 @@ h1 {
 }
 
 header,
+nav,
 footer {
   font-family: var(--font-sans);
 }
@@ -69,8 +72,7 @@ footer {
 header,
 main,
 footer {
-  max-width: 40em;
-  max-width: 75ch;
+  max-width: var(--content-width);
   margin: 0 auto;
 }
 
