@@ -17,7 +17,7 @@
   --color-text-dim: var(--g-06);
   --color-divider: var(--g-09);
 
-  --font-serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif," "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  --font-serif: Charter, Georgia, serif;
   --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 }
