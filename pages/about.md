@@ -1,9 +1,9 @@
 ---
 title: About me
-date: 2019-02-02T00:00:00.000Z
+date: 2019-02-02
 permalink: /about/index.html
 navtitle: About
-navorder: 1
+navorder: 9
 tags:
   - nav
 ---

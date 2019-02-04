@@ -3,10 +3,10 @@ layout: layouts/base.njk
 section: page
 ---
 
-<p>
-	<small>
-	  Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
-	</small>
-</p>
+<h1>{{ title }}</h1>
+
+<small>
+  Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
+</small>
 
 {{ layoutContent | safe }}
