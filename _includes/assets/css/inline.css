@@ -17,11 +17,12 @@
   --color-text-dim: var(--g-06);
   --color-divider: var(--g-09);
 
-  --content-width: 37.5em;
+  --content-width: 35em;
 
-  --font-serif: Charter, Georgia, serif;
-  --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
-    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  --font-serif: Georgia, serif;
+  --font-sans: "Avenir Next", sans-serif;
+  /* --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,17 +34,16 @@
   }
 }
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
+} */
+
+/* TYPOGRAPHY */
 
 body {
   margin: 1rem;
-}
-
-body {
   background-color: var(--color-body);
   font-family: var(--font-serif);
   line-height: 1.6;
@@ -65,61 +65,40 @@ footer {
 h1 {
   font-size: 2em;
   line-height: 1.1;
-  margin: 0 0 0.25em 0;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.25em;
   border-bottom: 1px solid var(--color-divider);
 }
 h2 {
   font-size: 1.3em;
   line-height: 1.2;
+  padding-bottom: 0.25em;
+  margin-top: 2em;
+  border-bottom: 1px solid var(--color-divider);
 }
 h3 {
+  margin-top: 2em;
   font-size: 1.1em;
   line-height: 1.3;
 }
 h4 {
+  margin-top: 2em;
   font-size: medium;
 }
 h5 {
+  margin-top: 2em;
   font-size: small;
 }
 h6 {
+  margin-top: 2em;
   font-size: x-small;
-}
-
-header,
-main,
-footer {
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
-
-a,
-a:visited {
-  color: currentColor;
-  text-decoration-style: dotted;
-  -webkit-text-decoration-style: dotted;
-}
-a:hover {
-  text-decoration-style: solid;
-  -webkit-text-decoration-style: solid;
-}
-
-main {
-  padding: 2em 0;
-}
-
-main :first-child,
-main > article :first-child {
-  margin-top: 0;
-}
-main h1 {
-  padding-bottom: 0.25em;
-  margin-bottom: 0.25em;
 }
 
 small {
   color: var(--color-text-dim);
   font-family: var(--font-sans);
+  font-size: 0.875em;
+  font-weight: 500;
 }
 
 blockquote {
@@ -147,39 +126,69 @@ pre {
   margin: 0.5em 0;
 }
 
+/* LAYOUT */
+
+header,
+main,
+footer {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+main {
+  padding: 2em 0;
+}
+
+main :first-child,
+main > article :first-child {
+  margin-top: 0;
+}
+
 hr {
   margin: 1em 0;
   border: none;
   border-bottom: 1px solid var(--color-divider);
 }
 
-/* Header */
+/* LINKS */
 
-/*header {
-  display: flex;
-  justify-content: space-between;
-}*/
-
-header nav {
-  text-transform: lowercase;
+a,
+a:visited {
+  color: currentColor;
+  text-decoration-style: dotted;
+  -webkit-text-decoration-style: dotted;
+}
+a:hover {
+  color: var(--color-text);
+  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
 }
 
-header > em {
-  display: block;
+nav a:not(:hover),
+footer a:not(:hover),
+small a:not(:hover) {
+  color: var(--color-text-dim);
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header > em > a {
+  color: var(--color-body);
   font-weight: bold;
   font-style: normal;
   margin: 0.5em 0;
+  text-decoration: none;
 }
 
+header nav {
+  text-transform: lowercase;
+  font-weight: 500;
+}
 header nav ul {
   padding: 0;
   margin: 0.5em 0;
 }
-
-header nav ul :first-child {
-  margin-left: 0;
-}
-
 header nav li {
   display: inline-block;
 }
@@ -187,21 +196,12 @@ header nav li:not(:last-child):after {
   content: "\a0\b7\a0";
 }
 
-header em a {
-  text-decoration: none;
-}
-
-nav a:not(:hover) {
-  color: var(--color-text-dim);
-  text-decoration: none;
-}
-
 header nav li a[data-current="current item"] {
   color: currentColor;
   text-decoration: underline;
 }
 
-/* Posts List and Article */
+/* POSTS LIST AND ARTICLE */
 
 main > section > article {
   margin-bottom: 2em;
@@ -249,18 +249,21 @@ img {
 
 /* Post Tags */
 
-a[rel="tag"],
+/* a[rel="tag"],
 a[rel="tag"]:visited {
   text-decoration: none;
 }
 
 a[rel="tag"]:hover {
   color: var(--color-text);
-}
+} */
 
 @media screen and (min-width: 768px) {
-  header {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-  }
+  /* body {
+    font-size: 110%;
+  } */
+  /* header {
+    display: flex;
+    justify-content: space-between;
+  } */
 }

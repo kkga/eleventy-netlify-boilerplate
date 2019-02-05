@@ -8,14 +8,14 @@ date: 2019-02-03
 permalink: /now/index.html
 ---
 
-### Work
+## Work
 
--   working on some groundbreaking stuff at Webflow
+- working on some groundbreaking stuff at Webflow
 
-### Play
+## Play
 
--   working on a game
+- working on a game
 
-### Reading
+## Reading
 
--   [Game Mechanics: Advanced Game Design](https://www.goodreads.com/book/show/13705461-game-mechanics) by Ernest Adams, Joris Dormans
+- [Game Mechanics: Advanced Game Design](https://www.goodreads.com/book/show/13705461-game-mechanics) by Ernest Adams, Joris Dormans

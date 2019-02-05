@@ -52,11 +52,11 @@ module.exports = function(eleventyConfig) {
   });
 
   // set order for nav items
-  eleventyConfig.addCollection('nav', function(collection) {
-    return collection.getFilteredByTag('nav').sort(function(a, b) {
-      return a.data.navorder - b.data.navorder
-    })
-  })
+  eleventyConfig.addCollection("nav", function(collection) {
+    return collection.getFilteredByTag("nav").sort(function(a, b) {
+      return a.data.navorder - b.data.navorder;
+    });
+  });
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
@@ -73,14 +73,14 @@ module.exports = function(eleventyConfig) {
     typographer: true
   };
   let opts = {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    // permalink: true,
+    // permalinkClass: "direct-link",
+    // permalinkSymbol: "#"
   };
-   eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt(options).use(markdownItAnchor, opts)
   );
-
 
   return {
     templateFormats: ["md", "njk", "html"],

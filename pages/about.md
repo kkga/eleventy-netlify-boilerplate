@@ -13,8 +13,6 @@ tags:
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
----
-
 ## Webflow, 2015–2018
 
 - **Grid**: A flexible layout mechanism with direct manipulation controls, built on top of CSS Grid.
@@ -28,8 +26,6 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
   - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
----
-
 ## Stampsy, 2012–2014
 
 - Worked as a designer (and partly as a front-end engineer) at Stampsy — a web platform for sharing and discovering visual stories. I designed the product and built a modular CSS architecture behind it.
@@ -38,8 +34,6 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
 - In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design edit
   or. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
-
----
 
 ## Misc
 
