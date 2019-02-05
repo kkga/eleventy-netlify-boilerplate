@@ -51,6 +51,13 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // set order for nav items
+  eleventyConfig.addCollection('nav', function(collection) {
+    return collection.getFilteredByTag('nav').sort(function(a, b) {
+      return a.data.navorder - b.data.navorder
+    })
+  })
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("static/fonts");
@@ -58,6 +65,7 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
+  let markdownItAnchor = require("markdown-it-anchor");
   let options = {
     html: true,
     breaks: true,
@@ -69,6 +77,10 @@ module.exports = function(eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#"
   };
+   eleventyConfig.setLibrary("md", markdownIt(options)
+    .use(markdownItAnchor, opts)
+  );
+
 
   return {
     templateFormats: ["md", "njk", "html"],
