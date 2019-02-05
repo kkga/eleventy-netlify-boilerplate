@@ -1,9 +1,10 @@
 ---
 layout: layouts/blog.njk
 title: Writing
+subtext: Raw thoughts
 tags:
-  - nav
+    - nav
 navtitle: Writing
-date: 2017-01-01
+navorder: 1
 permalink: /writing/index.html
 ---

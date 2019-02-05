@@ -1,9 +1,11 @@
 ---
 title: Quotes
 tags:
-  - nav
+    - nav
 navtitle: Quotes
-date: 2017-01-01
+navorder: 2
+subtext: A collection of random quotes I saved over time
+date: 2019-02-02
 section: quotes
 permalink: /quotes/index.html
 ---

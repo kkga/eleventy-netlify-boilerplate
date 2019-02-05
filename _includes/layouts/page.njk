@@ -3,10 +3,14 @@ layout: layouts/base.njk
 section: page
 ---
 
-<h1>{{ title }}</h1>
+<header>
+	<h1>{{ title }}</h1>
 
-<small>
-  Updated: <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
-</small>
+	{% if subtext %} 
+	<small>
+	  {{subtext}}{% if date %}. Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>.{% endif %}
+	</small>
+	{% endif %}
+</header>
 
 {{ layoutContent | safe }}
