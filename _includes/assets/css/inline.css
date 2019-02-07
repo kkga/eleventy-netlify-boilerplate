@@ -1,22 +1,34 @@
 :root {
   /* Verdandi Alter Colors */
-  --g-00: #050607;
-  --g-01: #111316;
-  --g-02: #1b1f23;
-  --g-03: #262b30;
-  --g-04: #323940;
-  --g-05: #424a52;
-  --g-06: #5b646c;
-  --g-07: #7e868d;
-  --g-08: #a1a8ae;
-  --g-09: #c0c5ca;
-  --g-10: #d6dade;
+  --d-00: #050607;
+  --d-01: #111316;
+  --d-02: #1b1f23;
+  --d-03: #262b30;
+  --d-04: #323940;
+  --d-05: #424a52;
+  --d-06: #5b646c;
+  --d-07: #7e868d;
+  --d-08: #a1a8ae;
+  --d-09: #c0c5ca;
+  --d-10: #d6dade;
+  
+  --l-00: #f8f9fa;
+  --l-01: #e9ecee;
+  --l-02 :#dce0e4;
+  --l-03: #cfd4d9;
+  --l-04: #bfc6cd;
+  --l-05: #adb5bd;
+  --l-06: #939ba4;
+  --l-07: #727981;
+  --l-08: #51575e;
+  --l-09: #353a3f;
+  --l-10: #212529;
 
-  --color-body: var(--g-10);
-  --color-text: var(--g-01);
-  --color-text-dim: var(--g-05);
-  --color-text-dimmer: var(--g-08);
-  --color-divider: var(--g-09);
+  --color-body: var(--l-00);
+  --color-text: var(--l-10);
+  --color-text-dim: var(--l-05);
+  --color-text-dimmer: var(--l-03);
+  --color-divider: var(--l-02);
 
   --content-width: 35em;
 
@@ -30,10 +42,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-body: var(--g-02);
-    --color-text: var(--g-09);
-    --color-text-dim: var(--g-06);
-    --color-divider: var(--g-03);
+    --color-body: var(--d-02);
+    --color-text: var(--d-09);
+    --color-text-dim: var(--d-06);
+    --color-divider: var(--d-03);
   }
 }
 
