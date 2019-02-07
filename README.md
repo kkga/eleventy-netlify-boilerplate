@@ -1,4 +1,8 @@
-# Eleventy Netlify Boilerplate
+Source for my home page
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2f599751-8ccc-4638-af3e-9f6a14a7bb7a/deploy-status)](https://app.netlify.com/sites/home-12341234/deploys)
+
+---
 
 ## What is it?
 
@@ -14,16 +18,16 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 
 ## Features
 
-* Sample pages and blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* CSS 2kb minified, inlined for fastest page render
-* Pre-builds and minifies your HTML
-* Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
-* Uses Markdown files for content
-* Uses Liquid and/or Nunjucks templates for layout
-* 100% Javascript framework free
-* Optional pipeline for minified inline JS
-* Continuous Deployment workflow via Netlify
+-   Sample pages and blog with tag support
+-   Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
+-   CSS 2kb minified, inlined for fastest page render
+-   Pre-builds and minifies your HTML
+-   Responsive CSS Grid layout, with fallbacks (see [Browser Support](#browser-support))
+-   Uses Markdown files for content
+-   Uses Liquid and/or Nunjucks templates for layout
+-   100% Javascript framework free
+-   Optional pipeline for minified inline JS
+-   Continuous Deployment workflow via Netlify
 
 ## Want to try it out now?
 
@@ -33,11 +37,11 @@ Clicking the button above will deploy a copy the demo website to your Netlify
 account (you can create an account during this process if you don't have one)
 and everything needed for running the CMS:
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-* Process form data with Netlify Forms
+-   A new repository in your GitHub account with the code
+-   Full Continuous Deployment to Netlify's global CDN network
+-   Control users and access with Netlify Identity
+-   Manage content with Netlify CMS
+-   Process form data with Netlify Forms
 
 ### Setup authentication
 
@@ -74,7 +78,6 @@ If you need any help with setting up Netlify CMS, you can reach out to the Netli
 git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-blog-name
 ```
 
-
 ### 2. Navigate to the directory
 
 ```
@@ -89,7 +92,7 @@ Specifically have a look at `.eleventy.js` to see if you want to configure any E
 npm install
 ```
 
-### 4. Edit _data/metadata.json
+### 4. Edit \_data/metadata.json
 
 This file contains your site title and author details.
 
@@ -100,11 +103,13 @@ npx eleventy
 ```
 
 Or build automatically when a template changes:
+
 ```
 npx eleventy --watch
 ```
 
 Or in debug mode:
+
 ```
 DEBUG=* npx eleventy
 ```
