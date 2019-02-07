@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kkga/kkga"
+    "url": "https://github.com/kkga/home"
   },
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "name": "Gadzhi Kharkharov",
+    "email": "me@kkga.me",
+    "url": "https://kkga.me"
   },
   "license": "UNLICENSED",
   "devDependencies": {
