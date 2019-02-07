@@ -4,8 +4,8 @@ subtext: What I'm doing now
 tags: nav
 navtitle: Now
 navorder: 4
-date: 2019-02-03
 permalink: /now/index.html
+date: Last Modified
 ---
 
 ## Work

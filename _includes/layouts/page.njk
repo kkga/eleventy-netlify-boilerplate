@@ -4,13 +4,17 @@ section: page
 ---
 
 <header>
-	<h1>{{ title }}</h1>
+  <h1>{{ title }}</h1>
 
-	{% if subtext %} 
-	<small>
-	  {{subtext}}{% if date %}. Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>.{% endif %}
-	</small>
-	{% endif %}
+  {% if subtext %}
+  <small>
+    {{ subtext }}. Updated
+    <time datetime="{{ page.date | machineDate }}">{{
+      page.date | readableDate
+    }}</time
+    >.
+  </small>
+  {% endif %}
 </header>
 
 {{ layoutContent | safe }}

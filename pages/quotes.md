@@ -1,13 +1,12 @@
 ---
 title: Quotes
-tags:
-    - nav
+tags: nav
 navtitle: Quotes
 navorder: 2
-subtext: A collection of random quotes I saved over time
-date: 2019-02-02
+subtext: Random quotes I saved over time
 section: quotes
 permalink: /quotes/index.html
+date: Last Modified
 ---
 
 > The mere formulation of a problem is far more often essential than its solution, which may be merely a matter of mathematical or experimental skill. To raise new questions, new possibilities, to regard old problems from a new angle requires creative imagination and marks real advances in science.

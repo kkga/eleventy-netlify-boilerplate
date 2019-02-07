@@ -1,19 +1,24 @@
 ---
 title: About me
 subtext: My face and some bullet points
-date: 2019-02-02
 permalink: /about/index.html
 navtitle: About
 navorder: 3
-tags:
-  - nav
+tags: nav
+date: Last Modified
 ---
 
 ![my face](/static/img/face.jpg "me")
 
+## My life so far
+
+Overall, my life has been pretty good so far.
+
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
-## Webflow, 2015–2018
+## Webflow
+
+<small>2015–2018</small>
 
 - **Grid**: A flexible layout mechanism with direct manipulation controls, built on top of CSS Grid.
   - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)

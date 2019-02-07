@@ -1,35 +1,29 @@
-<section>
-	{% for post in postslist | reverse %}
-		<article{% if post.url == url %} data-current="current item"{% endif %}>
-			<h3>
-				<a href="{{ post.url | url }}">
-					{% if post.data.title %}
-						{{ post.data.title }}
-					{% else %}
-						Untitled
-					{% endif %}
-				</a>
-			</h3>
-			<small>
-				<time datetime="{{ post.date | machineDate }}">
-					{{ post.date | readableDate }}
-				</time>
-				{% if post.data.tags %}
-					<span>&middot;</span>
-					{% for tag in post.data.tags %}
-		  			{%- if tag != "post" -%}
-		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
-		  			<a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
-		  			{%- endif -%}
-					{% endfor %}
-				{% endif %}
-			</small>
-						{% if post.data.summary %}
-				<p>
-					{{ post.data.summary }}
-				</p>
-			{% endif %}
-
-		</article>
-	{% endfor %}
+<section class="postslist">
+  {% for post in postslist | reverse %}
+  <article class="postslist-item" {% if post.url == url %} data-current="current item"{% endif %}>
+    <h3>
+      <a href="{{ post.url | url }}">
+        {% if post.data.title %}
+        {{ post.data.title }}
+        {% else %} Untitled {% endif %}
+      </a>
+    </h3>
+    {% if post.data.summary %}
+    <p>
+      {{ post.data.summary }}
+    </p>
+    {% endif %}
+	<small>
+      <time datetime="{{ post.date | machineDate }}">
+        {{ post.date | readableDate }}
+      </time>
+      {% if post.data.tags %}
+      <span>&middot;</span>
+      {% for tag in post.data.tags %} {%- if tag != "post" -%} {% set tagUrl
+      %}/tags/{{ tag }}/{% endset %}
+      <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
+      {%- endif -%} {% endfor %} {% endif %}
+    </small>
+  </article>
+  {% endfor %}
 </section>

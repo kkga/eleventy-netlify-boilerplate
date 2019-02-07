@@ -21,6 +21,8 @@
 
   --font-serif: Georgia, serif;
   --font-sans: "Avenir Next", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
   /* --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
     "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; */
 }
@@ -62,24 +64,30 @@ footer {
   font-family: var(--font-sans);
 }
 
+nav {
+  font-family: var(--font-mono);
+  /* font-size: small; */
+}
+
 h1 {
-  font-size: 2em;
+  font-size: xx-large;
   line-height: 1.1;
   padding-bottom: 0.25em;
   margin-bottom: 0.25em;
   border-bottom: 1px solid var(--color-divider);
 }
 h2 {
-  font-size: 1.3em;
-  line-height: 1.2;
+  font-size: x-large;
+  line-height: 1.25;
   padding-bottom: 0.25em;
+  margin-bottom: 0.75em;
   margin-top: 2em;
   border-bottom: 1px solid var(--color-divider);
 }
 h3 {
   margin-top: 2em;
-  font-size: 1.1em;
-  line-height: 1.3;
+  font-size: large;
+  line-height: 1.5;
 }
 h4 {
   margin-top: 2em;
@@ -96,8 +104,8 @@ h6 {
 
 small {
   color: var(--color-text-dim);
-  font-family: var(--font-sans);
-  font-size: 0.875em;
+  font-family: var(--font-mono);
+  font-size: small;
   font-weight: 500;
 }
 
@@ -136,7 +144,7 @@ footer {
 }
 
 main {
-  padding: 2em 0;
+  padding: 4em 0;
 }
 
 main :first-child,
@@ -208,6 +216,7 @@ main > section > article {
 }
 main > section > article > h3 {
   margin-bottom: 0;
+  line-height: inherit;
 }
 main > section > article > nav > a {
   color: var(--color-text-dim);
@@ -221,15 +230,8 @@ main header small {
   display: block;
 }
 
-/*article {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid var(--color-divider);
-}
-*/
 main > section > article > * {
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
 
 ul {
