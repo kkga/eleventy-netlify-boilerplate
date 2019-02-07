@@ -8,7 +8,7 @@ tags: nav
 date: Last Modified
 ---
 
-![my face](/static/img/face.jpg "me")
+![my face][my-face]
 
 ## My life so far
 
@@ -45,3 +45,5 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
 - At some point I designed a [UI theme](https://github.com/kkga/spacegray) for Sublime Text — a popular code editor. It's been installed by [~400k users](https://packagecontrol.io/packages/Theme%20-%20Spacegray) and has ~7k stars on GitHub.
 - During 2010–2012 I've freelanced and worked with various international startups, but most of the time I was posting [useless stuff](https://dribbble.com/gadzhi) on Dribbble.
 - In my early twenties I've played a lot of World of Warcraft — a multiplayer online game. It's quite intense and requires a lot of concentration. I had a lot of fun designing and building custom interfaces for it, which improved my performance and overall game experience. I think that's what got me into design.
+
+[my-face]: /static/img/face.jpg "me"

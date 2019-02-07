@@ -14,7 +14,8 @@
 
   --color-body: var(--g-10);
   --color-text: var(--g-01);
-  --color-text-dim: var(--g-06);
+  --color-text-dim: var(--g-05);
+  --color-text-dimmer: var(--g-08);
   --color-divider: var(--g-09);
 
   --content-width: 35em;
@@ -23,8 +24,8 @@
   --font-sans: "Avenir Next", sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
     monospace;
-  /* --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
-    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; */
+  /*--font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",*/
+  /*"Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
 }
 
 @media (prefers-color-scheme: dark) {
@@ -75,6 +76,7 @@ h1 {
   padding-bottom: 0.25em;
   margin-bottom: 0.25em;
   border-bottom: 1px solid var(--color-divider);
+  position: relative;
 }
 h2 {
   font-size: x-large;
@@ -83,11 +85,13 @@ h2 {
   margin-bottom: 0.75em;
   margin-top: 2em;
   border-bottom: 1px solid var(--color-divider);
+  position: relative;
 }
 h3 {
   margin-top: 2em;
   font-size: large;
   line-height: 1.5;
+  position: relative;
 }
 h4 {
   margin-top: 2em;
@@ -100,6 +104,29 @@ h5 {
 h6 {
   margin-top: 2em;
   font-size: x-small;
+}
+
+h1:hover > .direct-link {
+  opacity: 1;
+}
+h2:hover > .direct-link {
+  opacity: 1;
+}
+h3:hover > .direct-link {
+  opacity: 1;
+}
+h4:hover > .direct-link {
+  opacity: 1;
+}
+
+.direct-link {
+  opacity: 0;
+  position: absolute;
+  left: -1.5em;
+  width: 1.5em;
+  text-align: center;
+  color: var(--color-text-dimmer);
+  text-decoration: none;
 }
 
 small {
@@ -118,7 +145,10 @@ blockquote {
 }
 
 pre {
-  font-size: 14px;
+  font-size: small;
+  line-height: 1.25;
+  font-family: var(--font-mono);
+  background-color: var(--color-divider);
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -131,7 +161,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 /* LAYOUT */
