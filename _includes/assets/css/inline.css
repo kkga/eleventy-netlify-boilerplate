@@ -26,7 +26,7 @@
 
   --color-body: var(--l-00);
   --color-text: var(--l-10);
-  --color-text-dim: var(--l-05);
+  --color-text-dim: var(--l-06);
   --color-text-dimmer: var(--l-03);
   --color-divider: var(--l-02);
 
@@ -79,7 +79,7 @@ footer {
 
 nav {
   font-family: var(--font-mono);
-  /* font-size: small; */
+  font-size: small;
 }
 
 h1 {
@@ -93,10 +93,7 @@ h1 {
 h2 {
   font-size: x-large;
   line-height: 1.25;
-  padding-bottom: 0.25em;
-  margin-bottom: 0.75em;
   margin-top: 2em;
-  border-bottom: 1px solid var(--color-divider);
   position: relative;
 }
 h3 {
