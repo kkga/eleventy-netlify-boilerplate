@@ -10,6 +10,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
   });
+  
+  eleventyConfig.addFilter("relativeDate", dateObj => {
+    return DateTime.fromJSDate(dateObj).toRelative();
+  });
 
   // Date formatting (machine readable)
   eleventyConfig.addFilter("machineDate", dateObj => {

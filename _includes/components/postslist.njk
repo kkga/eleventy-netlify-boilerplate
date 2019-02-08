@@ -15,7 +15,7 @@
     {% endif %}
 	<small>
       <time datetime="{{ post.date | machineDate }}">
-        {{ post.date | readableDate }}
+        {{ post.date | relativeDate }}
       </time>
       {% if post.data.tags %}
       <span>&middot;</span>
