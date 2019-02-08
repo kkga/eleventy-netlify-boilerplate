@@ -70,10 +70,7 @@ module.exports = function(eleventyConfig) {
     linkify: true,
     typographer: true
   };
-  eleventyConfig.setLibrary(
-    "md",
-    markdownIt(options)
-  );
+  eleventyConfig.setLibrary("md", markdownIt(options));
 
   return {
     templateFormats: ["md", "njk", "html"],
