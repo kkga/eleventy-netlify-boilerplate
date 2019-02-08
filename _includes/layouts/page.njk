@@ -10,7 +10,7 @@ section: page
   <small>
     {{ subtext }}. Updated
     <time datetime="{{ page.date | machineDate }}">{{
-      page.date | readableDate
+      page.date | relativeDate
     }}</time
     >.
   </small>
