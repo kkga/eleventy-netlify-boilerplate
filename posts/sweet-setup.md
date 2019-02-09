@@ -1,11 +1,11 @@
 ---
 title: Sweet setup
-date: 2019-02-01T16:18:05.541Z
 summary: whatever
 tags:
   - post
   - setup
 ---
+
 > Who are you and what do you do?
 
 My name is Gadzhi Kharkharov and I am a product designer at Webflow.
@@ -43,16 +43,13 @@ I always have one of the default OS X wallpapers.
 
 The 13" Retina MacBook Pro desperately needs an update and I'm mostly concerned about the display. I'm using it for almost 3 years and while it was pretty good back in the days, it feels really outdated now. The logical resolution of 13" Retina display is too small and I wish the next generation of MBP to have a display similar to the 12.9" iPad Pro, which is stunning. Hopefully we'll see an update this year.
 
-
-
-
 Games
 
 - Bastion
 - Transistor
-- Crashlands 
+- Crashlands
 
-[1]:	https://dribbble.com/nylas
-[2]:	https://github.com/kkga/spacegray
-[3]:	http://principleformac.com/
-[4]:	http://blog.framerjs.com/posts/introducing-the-new-framer.html
+[1]: https://dribbble.com/nylas
+[2]: https://github.com/kkga/spacegray
+[3]: http://principleformac.com/
+[4]: http://blog.framerjs.com/posts/introducing-the-new-framer.html

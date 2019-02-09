@@ -7,7 +7,7 @@ section: post
   <header>
     <h1>{{ title }}</h1>
     <small>
-      <time datetime="{{ date | machineDate }}">{{ date | relativeDate }}</time>
+      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
 
       {% if tags %}
       <span>&middot;</span>

@@ -6,15 +6,15 @@ section: page
 <header>
   <h1>{{ title }}</h1>
 
-  {% if subtext %}
   <small>
-    {{ subtext }}. Updated
-    <time datetime="{{ page.date | machineDate }}">{{
-      page.date | relativeDate
-    }}</time
-    >.
+    {% if subtext %}
+      {{ subtext }}
+      <span>&middot;</span>
+    {% endif %}
+    updated <time datetime="{{ page.date | machineDate }}">
+      {{page.date | readableDate}}
+      </time>
   </small>
-  {% endif %}
 </header>
 
 {{ layoutContent | safe }}

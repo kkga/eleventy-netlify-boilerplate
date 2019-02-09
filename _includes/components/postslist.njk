@@ -13,9 +13,9 @@
       {{ post.data.summary }}
     </p>
     {% endif %}
-	<small>
+    <small>
       <time datetime="{{ post.date | machineDate }}">
-        {{ post.date | relativeDate }}
+        {{ post.date | readableDate }}
       </time>
       {% if post.data.tags %}
       <span>&middot;</span>

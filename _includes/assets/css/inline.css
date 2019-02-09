@@ -11,10 +11,10 @@
   --d-08: #a1a8ae;
   --d-09: #c0c5ca;
   --d-10: #d6dade;
-  
+
   --l-00: #f8f9fa;
   --l-01: #e9ecee;
-  --l-02 :#dce0e4;
+  --l-02: #dce0e4;
   --l-03: #cfd4d9;
   --l-04: #bfc6cd;
   --l-05: #adb5bd;
@@ -26,18 +26,15 @@
 
   --color-body: var(--l-00);
   --color-text: var(--l-10);
-  --color-text-dim: var(--l-06);
+  --color-text-dim: var(--l-07);
   --color-text-dimmer: var(--l-03);
   --color-divider: var(--l-02);
 
-  --content-width: 35em;
-
-  --font-serif: Georgia, serif;
-  --font-sans: "Avenir Next", sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
-  /*--font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",*/
-  /*"Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;*/
+  --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  --font-serif: Charter, Georgia, serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,10 +55,9 @@
 /* TYPOGRAPHY */
 
 body {
-  margin: 1rem;
   background-color: var(--color-body);
   font-family: var(--font-serif);
-  line-height: 1.6;
+  line-height: 1.45;
   color: var(--color-text);
 }
 
@@ -77,14 +73,11 @@ footer {
   font-family: var(--font-sans);
 }
 
-nav {
-  font-family: var(--font-mono);
-  font-size: small;
-}
-
 h1 {
+  font-family: var(--font-serif);
+  font-style: italic;
   font-size: xx-large;
-  line-height: 1.1;
+  line-height: 1.15;
   padding-bottom: 0.25em;
   margin-bottom: 0.25em;
   border-bottom: 1px solid var(--color-divider);
@@ -92,30 +85,31 @@ h1 {
 h2 {
   font-size: x-large;
   line-height: 1.25;
-  margin-top: 2em;
+  margin: 2rem 0 1rem;
 }
 h3 {
-  margin-top: 2em;
+  margin: 2rem 0 1rem;
   font-size: large;
   line-height: 1.5;
 }
 h4 {
-  margin-top: 2em;
+  margin: 2rem 0 1rem;
   font-size: medium;
 }
 h5 {
-  margin-top: 2em;
+  margin: 2rem 0 1rem;
   font-size: small;
 }
 h6 {
-  margin-top: 2em;
+  margin: 2rem 0 1rem;
   font-size: x-small;
 }
 
-small {
+small,
+nav {
   color: var(--color-text-dim);
   font-family: var(--font-mono);
-  font-size: small;
+  font-size: smaller;
   font-weight: 500;
 }
 
@@ -128,7 +122,7 @@ blockquote {
 }
 
 pre {
-  font-size: small;
+  font-size: smaller;
   line-height: 1.25;
   font-family: var(--font-mono);
   background-color: var(--color-divider);
@@ -147,40 +141,18 @@ pre {
   margin: 1em 0;
 }
 
-/* LAYOUT */
-
-header,
-main,
-footer {
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
-
-main {
-  padding: 4em 0;
-}
-
-main :first-child,
-main > article :first-child {
-  margin-top: 0;
-}
-
-hr {
-  margin: 1em 0;
-  border: none;
-  border-bottom: 1px solid var(--color-divider);
-}
-
 /* LINKS */
 
 a,
 a:visited {
   color: currentColor;
+  text-decoration-color: var(--color-text-dim);
   text-decoration-style: dotted;
   -webkit-text-decoration-style: dotted;
 }
 a:hover {
   color: var(--color-text);
+  text-decoration-color: currentColor;
   text-decoration-style: solid;
   -webkit-text-decoration-style: solid;
 }
@@ -218,7 +190,7 @@ header nav li:not(:last-child):after {
 }
 
 header nav li a[data-current="current item"] {
-  color: currentColor;
+  color: var(--color-text);
   text-decoration: underline;
 }
 
@@ -249,7 +221,6 @@ main > section > article > * {
 
 ul {
   padding-left: 0;
-  list-style: square;
 }
 
 ul ul {
@@ -274,11 +245,7 @@ a[rel="tag"]:hover {
 } */
 
 @media screen and (min-width: 768px) {
-  /* body {
-    font-size: 110%;
-  } */
-  /* header {
-    display: flex;
-    justify-content: space-between;
-  } */
+  body {
+    /*font-size: 110%;*/
+  }
 }
