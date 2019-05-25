@@ -4,5 +4,5 @@ summary: I've recently simplified my interaction with a computer. This is a quic
 tags:
     - post
     - setup
-    - Linux
+    - linux
 ---

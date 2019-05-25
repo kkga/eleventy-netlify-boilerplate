@@ -50,6 +50,13 @@ module.exports = function(eleventyConfig) {
       return item.inputPath.match(/^\.\/posts\//) !== null;
     });
   });
+  
+  // drafts
+  eleventyConfig.addCollection("drafts", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/drafts\//) !== null;
+    });
+  });
 
   // set order for nav items
   eleventyConfig.addCollection("nav", function(collection) {
