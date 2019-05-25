@@ -220,6 +220,12 @@ main header small {
   display: block;
 }
 
+main header p {
+  font-size: larger;
+  font-family: var(--font-sans);
+  color: var(--text-dim);
+}
+
 main > section > article > * {
   margin: 0;
 }

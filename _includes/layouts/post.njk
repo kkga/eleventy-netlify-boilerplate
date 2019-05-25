@@ -7,12 +7,7 @@ section: post
   <header>
     <h1>{{ title }}</h1>
     <small>
-      {% if summary %}
-      {{ summary }}
-      <br />
-      {% endif %}
       <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
-
       {% if tags %}
       <span>&middot;</span>
       {% for tag in tags %} {%- if tag != "post" -%} {% set tagUrl %}/tags/{{
@@ -21,7 +16,11 @@ section: post
       <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
       {%- endif -%} {% endfor %} {% endif %}
     </small>
+    {% if summary %}
+      <p>{{ summary }}</p>
+    {% endif %}
   </header>
+  
 
   {{ layoutContent | safe }}
 </article>
