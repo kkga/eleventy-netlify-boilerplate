@@ -14,7 +14,7 @@ date: Last Modified
 
 ### Play
 
-- working on a game
+- _not_ working on a game ¯\_(ツ)_/¯
 
 ### Reading
 
