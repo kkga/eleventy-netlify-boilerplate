@@ -7,6 +7,10 @@ section: post
   <header>
     <h1>{{ title }}</h1>
     <small>
+      {% if summary %}
+      {{ summary }}
+      <br />
+      {% endif %}
       <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
 
       {% if tags %}
