@@ -223,7 +223,7 @@ main header small {
 main header p {
   font-size: larger;
   font-family: var(--font-sans);
-  color: var(--text-dim);
+  color: var(--color-text-dim);
 }
 
 main > section > article > * {
