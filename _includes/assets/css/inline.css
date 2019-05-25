@@ -52,6 +52,7 @@
   box-sizing: border-box;
 } */
 
+
 /* TYPOGRAPHY */
 
 body {
@@ -110,7 +111,6 @@ nav {
   color: var(--color-text-dim);
   font-family: var(--font-sans);
   font-size: smaller;
-  font-weight: 500;
 }
 
 blockquote {
@@ -139,6 +139,10 @@ pre {
   padding: 1em;
   margin: 1em 0;
 }
+code {
+  font-family: var(--font-mono);
+}
+
 
 /* LINKS */
 
@@ -163,6 +167,7 @@ small a:not(:hover) {
   text-decoration: none;
 }
 
+
 /* HEADER */
 
 header > em > a {
@@ -185,13 +190,14 @@ header nav li {
   display: inline-block;
 }
 header nav li:not(:last-child):after {
-  content: "\a0\b7\a0";
+  content: " \a0\b7\a0 ";
 }
 
 header nav li a[data-current="current item"] {
   color: var(--color-text);
   text-decoration: underline;
 }
+
 
 /* POSTS LIST AND ARTICLE */
 
@@ -231,6 +237,7 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
+
 
 /* Post Tags */
 
