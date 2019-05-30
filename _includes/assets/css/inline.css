@@ -46,13 +46,6 @@
   }
 }
 
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-} */
-
-
 /* TYPOGRAPHY */
 
 body {
@@ -143,7 +136,6 @@ code {
   font-family: var(--font-mono);
 }
 
-
 /* LINKS */
 
 a,
@@ -166,7 +158,6 @@ small a:not(:hover) {
   color: var(--color-text-dim);
   text-decoration: none;
 }
-
 
 /* HEADER */
 
@@ -197,7 +188,6 @@ header nav li a[data-current="current item"] {
   color: var(--color-text);
   text-decoration: underline;
 }
-
 
 /* POSTS LIST AND ARTICLE */
 
@@ -244,7 +234,6 @@ img {
   vertical-align: bottom;
 }
 
-
 /* Post Tags */
 
 /* a[rel="tag"],
@@ -258,6 +247,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    /*font-size: 110%;*/
+    font-size: 110%;
   }
 }
