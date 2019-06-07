@@ -6,5 +6,27 @@ tags:
     - setup
     - linux
 ---
+- Linux and macOS
+	- sway and gnome
+	- Difference in software appreciation
+- terminal
+	- kitty overview: tabs, layouts
+	- Some useful cli apps
+- editing text
+	- vim for notes
+	- Vim for writing
+	- Vim for working (web dev)
+	- Todo.txt
+	- SwiftoDo
+- Browsing
+	- personal browser (Firefox)
+	- Trello for big projects
+	- Siri shortcuts for adding todos and notes
+	- Note about qutebrowser
+	- Work browser (brave)
+	- Designing mockups (figma)
+	- web development
 
-hello
+---
+
+My software setup has been surprisingly constant over the last decade. I've used macOS since the early 2000s.
