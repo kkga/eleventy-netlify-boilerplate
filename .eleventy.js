@@ -75,8 +75,7 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-    typographer: true,
-    highlight: true
+    typographer: true
   };
   eleventyConfig.setLibrary("md", markdownIt(options));
 
