@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
@@ -78,6 +79,8 @@ module.exports = function(eleventyConfig) {
     typographer: true
   };
   eleventyConfig.setLibrary("md", markdownIt(options));
+  
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     templateFormats: ["md", "njk", "html"],
