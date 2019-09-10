@@ -1,11 +1,9 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Date formatting (human readable)
@@ -77,7 +75,8 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-    typographer: true
+    typographer: true,
+    highlight: true
   };
   eleventyConfig.setLibrary("md", markdownIt(options));
 
