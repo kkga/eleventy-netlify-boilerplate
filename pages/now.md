@@ -2,7 +2,7 @@
 title: /now
 subtext: What I'm doing now
 tags: nav
-navtitle: /now
+navtitle: Now
 navorder: 4
 permalink: /now/index.html
 date: Last Modified
@@ -14,7 +14,7 @@ date: Last Modified
 
 ### Play
 
-- _not_ working on a game ¯\_(ツ)_/¯
+- _not_ working on a game ¯\_(ツ)\_/¯
 
 ### Reading
 

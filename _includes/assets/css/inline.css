@@ -111,7 +111,6 @@ blockquote {
   margin-left: -1em;
   margin-right: 0;
   padding-left: 1em;
-  border-left: 4px solid var(--color-divider);
 }
 
 pre {
@@ -140,7 +139,7 @@ code {
 a,
 a:visited {
   color: currentColor;
-  text-decoration-color: var(--color-text-dim);
+  text-decoration-color: var(--color-text);
   text-decoration-style: dotted;
   -webkit-text-decoration-style: dotted;
 }
@@ -162,8 +161,9 @@ small a:not(:hover) {
 
 header > em {
   font-family: var(--font-sans);
-  color: var(--color-body);
+  color: var(--color-text);
   font-weight: bold;
+  font-style: normal;
   margin: 0.5em 0;
 }
 
