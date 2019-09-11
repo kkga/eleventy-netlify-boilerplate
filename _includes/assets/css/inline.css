@@ -116,7 +116,6 @@ blockquote {
 
 pre {
   line-height: 1.25;
-  font-family: var(--font-mono);
   background-color: var(--color-divider);
   direction: ltr;
   text-align: left;
@@ -130,7 +129,7 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 1em 0;
+  margin: 1em -1em;
 }
 code {
   font-family: var(--font-mono);
@@ -162,9 +161,9 @@ small a:not(:hover) {
 /* HEADER */
 
 header > em {
+  font-family: var(--font-sans);
   color: var(--color-body);
   font-weight: bold;
-  font-style: normal;
   margin: 0.5em 0;
 }
 
