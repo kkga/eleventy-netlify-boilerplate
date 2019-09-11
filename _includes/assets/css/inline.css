@@ -115,7 +115,8 @@ blockquote {
 }
 
 pre {
-  line-height: 1.25;
+  font-size: 75%;
+  line-height: 1.5;
   font-family: var(--font-mono);
   background-color: var(--color-divider);
   direction: ltr;
@@ -130,10 +131,10 @@ pre {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1em;
-  margin: 1em 0;
+  margin: 1em -1em;
 }
 code {
-  font-family: var(--font-mono);
+  font-family: inherit;
 }
 
 /* LINKS */
