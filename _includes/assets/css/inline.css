@@ -32,7 +32,7 @@
 
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
-  --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+  --font-sans: system-ui, -apple-system, ".SFNSText-Regular", "San Francisco",
     "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   --font-serif: Charter, Georgia, serif;
 }
@@ -108,7 +108,7 @@ nav {
 
 blockquote {
   font-style: italic;
-  margin-left: 0;
+  margin-left: -1em;
   margin-right: 0;
   padding-left: 1em;
   border-left: 4px solid var(--color-divider);
@@ -116,8 +116,6 @@ blockquote {
 
 pre {
   font-size: 75%;
-  line-height: 1.5;
-  font-family: var(--font-mono);
   background-color: var(--color-divider);
   direction: ltr;
   text-align: left;
@@ -134,7 +132,7 @@ pre {
   margin: 1em -1em;
 }
 code {
-  font-family: inherit;
+  font-family: var(--font-mono);
 }
 
 /* LINKS */
@@ -162,12 +160,11 @@ small a:not(:hover) {
 
 /* HEADER */
 
-header > em > a {
+header > em {
+  font-family: var(--font-sans);
   color: var(--color-body);
   font-weight: bold;
-  font-style: normal;
   margin: 0.5em 0;
-  text-decoration: none;
 }
 
 header nav {
@@ -248,6 +245,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 110%;
+    font-size: 100%;
   }
 }
