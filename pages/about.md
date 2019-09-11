@@ -18,7 +18,8 @@ Overall, my life seems to be worth living.
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
-### Projects at Webflow, 2015–2019
+### Projects at Webflow
+<small>2015–2019</small>
 
 - **Grid**: A flexible layout mechanism with direct manipulation controls, built on top of CSS Grid.
   - [webflow.com/grid](https://webflow.com/grid) (grid playground in Webflow)
@@ -31,7 +32,8 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
   - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
-### Stampsy, 2012–2014
+### Stampsy
+<small>2012–2014</small>
 
 - Worked as a designer (and partly as a front-end engineer) at Stampsy — a web platform for sharing and discovering visual stories. I designed the product and built a modular CSS architecture behind it.
   - [stampsy.com](https://stampsy.com/)
