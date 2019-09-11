@@ -32,7 +32,7 @@
 
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
-  --font-sans: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+  --font-sans: system-ui, -apple-system, ".SFNSText-Regular", "San Francisco",
     "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   --font-serif: Charter, Georgia, serif;
 }
@@ -108,7 +108,7 @@ nav {
 
 blockquote {
   font-style: italic;
-  margin-left: 0;
+  margin-left: -1em;
   margin-right: 0;
   padding-left: 1em;
   border-left: 4px solid var(--color-divider);
@@ -161,12 +161,11 @@ small a:not(:hover) {
 
 /* HEADER */
 
-header > em > a {
+header > em {
   color: var(--color-body);
   font-weight: bold;
   font-style: normal;
   margin: 0.5em 0;
-  text-decoration: none;
 }
 
 header nav {
@@ -247,6 +246,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 110%;
+    font-size: 100%;
   }
 }

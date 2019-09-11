@@ -1,8 +1,8 @@
 ---
-title: Now
+title: /now
 subtext: What I'm doing now
 tags: nav
-navtitle: Now
+navtitle: /now
 navorder: 4
 permalink: /now/index.html
 date: Last Modified
