@@ -139,15 +139,11 @@ code {
 a,
 a:visited {
   color: currentColor;
-  text-decoration-color: var(--color-text);
-  text-decoration-style: dotted;
-  -webkit-text-decoration-style: dotted;
+  text-decoration-color: var(--color-text-dim);
 }
 a:hover {
   color: var(--color-text);
   text-decoration-color: currentColor;
-  text-decoration-style: solid;
-  -webkit-text-decoration-style: solid;
 }
 
 nav a:not(:hover),
@@ -218,15 +214,6 @@ main > section > article > * {
   margin: 0;
 }
 
-ul {
-  padding-left: 0;
-}
-
-ul ul {
-  padding-left: 2em;
-  list-style: circle;
-}
-
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -245,6 +232,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 125%;
+    font-size: 115%;
   }
 }
