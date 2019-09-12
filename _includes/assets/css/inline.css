@@ -245,6 +245,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 100%;
+    font-size: 125%;
   }
 }
