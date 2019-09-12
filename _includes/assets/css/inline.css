@@ -108,9 +108,7 @@ nav {
 
 blockquote {
   font-style: italic;
-  margin-left: -1em;
   margin-right: 0;
-  padding-left: 1em;
 }
 
 pre {
@@ -127,8 +125,8 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 1em;
-  margin: 1em -1em;
+  padding: 2em;
+  margin: 1em -2em;
 }
 code {
   font-family: var(--font-mono);
