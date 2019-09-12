@@ -10,6 +10,8 @@ The concept of separating data and logic in [Godot](https://godotengine.org/) is
 
 In this post you'll learn how to create your own custom resources to hold data of various types that can be accessed and modified through the inspector panel and scripts. We'll start with the most basic example and then dig into how you can take it one step further by creating a fully dynamic inspector interface that changes depending on which variables are set in the resource.
 
+![structure](/static/img/PNG imagen.png)
+
 ---
 
 As a basic example, we're going to create a character class resource that defines a variety of stats for different playable classes (such as Warrior, Wizard, etc).
