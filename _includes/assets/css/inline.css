@@ -155,7 +155,7 @@ small a:not(:hover) {
 
 header > em {
   font-family: var(--font-sans);
-  color: var(--color-text);
+  color: var(--color-text-dim);
   font-weight: bold;
   font-style: normal;
   margin: 0.5em 0;
