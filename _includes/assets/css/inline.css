@@ -30,10 +30,8 @@
   --color-text-dimmer: var(--l-03);
   --color-divider: var(--l-02);
 
-  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-    monospace;
-  --font-sans: system-ui, -apple-system, ".SFNSText-Regular", "San Francisco",
-    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+  --font-sans: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   --font-serif: Charter, Georgia, serif;
 }
 
@@ -50,7 +48,7 @@
 
 body {
   background-color: var(--color-body);
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   line-height: 1.45;
   color: var(--color-text);
 }
@@ -112,7 +110,6 @@ blockquote {
 }
 
 pre {
-  font-size: 75%;
   background-color: var(--color-divider);
   direction: ltr;
   text-align: left;
