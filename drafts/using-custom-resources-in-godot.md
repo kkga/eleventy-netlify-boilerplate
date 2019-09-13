@@ -1,5 +1,5 @@
 ---
-title: Using custom resources as data containers in Godot
+title: Using custom resources in Godot
 tags:
   - draft
   - godot
