@@ -108,6 +108,7 @@ blockquote {
 }
 
 pre {
+  font-size: 100%;
   background-color: var(--color-divider);
   direction: ltr;
   text-align: left;
@@ -225,6 +226,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 115%;
+    font-size: 100%;
   }
 }
