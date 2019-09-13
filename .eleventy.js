@@ -73,13 +73,15 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
+  let markdownItContainer = require("markdown-it-container")
   let options = {
     html: true,
     breaks: true,
     linkify: true,
     typographer: true
   };
-  eleventyConfig.setLibrary("md", markdownIt(options));
+  let markdownLib = markdownIt(options).use(markdownItContainer, "note");
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     templateFormats: ["md", "njk", "html"],
