@@ -39,10 +39,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-body: var(--d-02);
+    --color-body: var(--d-01);
     --color-text: var(--d-09);
     --color-text-dim: var(--d-06);
+    --color-text-dimmer: var(--l-03);
     --color-divider: var(--d-03);
+    --color-container: var(--d-02);
   }
 }
 
@@ -115,7 +117,7 @@ blockquote {
 
 pre {
   font-size: 75%;
-  background-color: var(--color-divider);
+  background-color: var(--color-container);
   direction: ltr;
   text-align: left;
   white-space: pre;
