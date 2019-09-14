@@ -1,4 +1,24 @@
 :root {
+  /* Apprentice colors */
+  --foreground: #bcbcbc;
+  --background: #262626;
+  --color0: #1c1c1c;
+  --color8: #444444;
+  --color1: #af5f5f;
+  --color9: #ff8700;
+  --color2: #5f875f;
+  --color10: #87af87;
+  --color3: #87875f;
+  --color11: #ffffaf;
+  --color4: #5f87af;
+  --color12: #8fafd7;
+  --color5: #5f5f87;
+  --color13: #8787af;
+  --color6: #5f8787;
+  --color14: #5fafaf;
+  --color7: #6c6c6c;
+  --color15: #ffffff;
+
   /* Verdandi Alter Colors */
   --d-00: #050607;
   --d-01: #111316;
@@ -38,12 +58,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-body: var(--d-01);
-    --color-text: var(--d-09);
-    --color-text-dim: var(--d-06);
-    --color-text-dimmer: var(--l-03);
-    --color-divider: var(--d-03);
-    --color-container: var(--d-02);
+    --color-body: var(--background);
+    --color-text: var(--foreground);
+    --color-text-dim: var(--color7);
+    --color-text-dimmer: var(--color8);
+    --color-divider: var(--color8);
+    --color-container: var(--color0);
+    --color-link: var(--color6);
   }
 }
 
@@ -66,10 +87,12 @@ header,
 nav,
 footer {
   font-family: var(--font-sans);
+  font-weight: 500;
 }
 
 h1 {
   font-size: xx-large;
+  font-weight: 400;
   line-height: 1.15;
   padding-bottom: 0.25em;
   margin-bottom: 0.25em;
@@ -111,11 +134,7 @@ blockquote {
 }
 
 pre {
-  <<<<<<<HEAD
-  font-size: 75%;
   background-color: var(--color-container);
-  =======background-color: var(--color-divider);
-  >>>>>>>a722f021be39ac0a145604910ca5c8804f5a2879
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -127,8 +146,9 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 1em;
+  padding: 1em 2em;
   margin: 1em 0;
+  font-size: smaller;
 }
 code {
   font-family: var(--font-mono);
@@ -139,10 +159,10 @@ code {
 a,
 a:visited {
   color: currentColor;
-  text-decoration-color: var(--color-text-dim);
+  text-decoration-color: var(--color-link);
 }
 a:hover {
-  color: var(--color-text);
+  color: var(--color-link);
   text-decoration-color: currentColor;
 }
 
@@ -157,8 +177,8 @@ small a:not(:hover) {
 
 header > em {
   font-family: var(--font-sans);
-  color: var(--color-text-dim);
-  font-weight: bold;
+  color: var(--color-text);
+  font-weight: normal;
   font-style: normal;
   margin: 0.5em 0;
 }

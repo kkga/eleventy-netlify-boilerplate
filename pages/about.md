@@ -18,6 +18,8 @@ Overall, my life seems to be worth living.
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
+---
+
 ### Projects at Webflow
 
 <small>2015–2019</small>
@@ -33,6 +35,8 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
   - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
+---
+
 ### Stampsy
 
 <small>2012–2014</small>
@@ -42,6 +46,8 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [vimeo.com/199982837](https://vimeo.com/199982837) (product video)
   - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
 - In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
+
+---
 
 ### Misc
 

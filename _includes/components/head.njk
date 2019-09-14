@@ -5,8 +5,10 @@
   {% set css %}
     {% include "assets/css/layout.css" %}
     {% include "assets/css/inline.css" %}
+    {% include "assets/css/prism.css" %}
+    {% include "assets/css/highlight.css" %}
   {% endset %}
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,400i,600,600i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,400i,500,500i&display=swap" rel="stylesheet">
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}
     {% include "assets/js/inline.js" %}

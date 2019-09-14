@@ -1,0 +1,45 @@
+.highlight-line {
+  display: inline-block;
+  position: relative;
+  /* del, ins, mark default styles */
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.highlight-line:before {
+  position: absolute;
+  left: -2ch;
+}
+
+/* allow highlighting empty lines */
+.highlight-line:empty:before {
+  content: " ";
+}
+
+.highlight-line:not(:last-child) {
+  min-width: 100%;
+}
+.highlight-line .highlight-line:not(:last-child) {
+  min-width: 0;
+}
+
+/*
+ * Dark theme
+ */
+
+.highlight-line-isdir {
+  color: #b0b0b0;
+  background-color: #222;
+}
+.highlight-line-active:before {
+  content: "\2192";
+  color: var(--color11);
+}
+.highlight-line-add:before {
+  content: "+";
+  color: var(--color2);
+}
+.highlight-line-remove {
+  background-color: #902f2f;
+}
