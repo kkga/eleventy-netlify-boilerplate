@@ -4,10 +4,9 @@
 
 body {
   display: grid;
-  grid-template-columns: minmax(auto, 1fr) minmax(auto, var(--content-width)) minmax(
-      auto,
-      3fr
-    );
+  grid-template-columns:
+    minmax(auto, 1fr) minmax(auto, var(--content-width)) minmax(auto, 1fr)
+    minmax(auto, 1fr) minmax(auto, 1fr);
 }
 
 header,
@@ -17,7 +16,37 @@ footer {
 }
 
 main {
+  grid-column: 2 / 5;
   padding: 4em 0;
+}
+
+main article {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-columns: var(--content-width) 1fr 1fr;
+  /* align-items: baseline; */
+}
+
+main article header {
+  grid-column: 1;
+}
+main article h1,
+main article h2,
+main article h3,
+main article h4,
+main article h5,
+main article h6,
+main article p {
+  grid-column: 1;
+}
+
+main article pre {
+  grid-column: 1 / span 2;
+}
+
+main article .note,
+main article .warning {
+  grid-column: 2 / 4;
 }
 
 main :first-child,
