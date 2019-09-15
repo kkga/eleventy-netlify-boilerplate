@@ -104,7 +104,7 @@ module.exports = function(eleventyConfig) {
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
-  let markdownItContainer = require("markdown-it-container")
+  let markdownItContainer = require("markdown-it-container");
   let options = {
     html: true,
     breaks: true,
