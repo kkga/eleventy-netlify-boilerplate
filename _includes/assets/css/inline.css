@@ -58,13 +58,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-body: var(--background);
+    --color-body: var(--color0);
     --color-text: var(--foreground);
     --color-text-dim: var(--color7);
     --color-text-dimmer: var(--color8);
     --color-divider: var(--color8);
-    --color-container: var(--color0);
+    --color-container: var(--background);
     --color-link: var(--color6);
+    --color-keyword: var(--color11);
   }
 }
 
@@ -73,8 +74,9 @@
 body {
   background-color: var(--color-body);
   font-family: var(--font-sans);
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--color-text);
+  padding: 1em;
 }
 
 h1,
@@ -88,6 +90,7 @@ nav,
 footer {
   font-family: var(--font-sans);
   font-weight: 500;
+  color: var(--color15);
 }
 
 h1 {
@@ -134,7 +137,6 @@ blockquote {
 }
 
 pre {
-  background-color: var(--color-container);
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -146,12 +148,18 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 1em 2em;
+  padding: 0.75em 0;
   margin: 1em 0;
+  line-height: 1.25;
   font-size: smaller;
+  border-top: 1px dashed var(--color-divider);
+  border-bottom: 1px dashed var(--color-divider);
 }
 code {
   font-family: var(--font-mono);
+}
+:not(pre) > code {
+  color: var(--color-keyword);
 }
 
 /* LINKS */
@@ -239,6 +247,26 @@ img {
   vertical-align: bottom;
 }
 
+/* Article Containers */
+
+article .note {
+  margin: 2em 0;
+  font-size: smaller;
+  color: var(--color-text-dim);
+  background-color: var(--color-container);
+  padding: 0.75em 1em;
+}
+article .note::before {
+  content: "Note";
+  display: inline-block;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid var(--color2);
+  font-weight: 500;
+  color: var(--color10);
+  line-height: 1;
+}
+
 /* Post Tags */
 
 /* a[rel="tag"],
@@ -252,6 +280,6 @@ a[rel="tag"]:hover {
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 100%;
+    font-size: 110%;
   }
 }
