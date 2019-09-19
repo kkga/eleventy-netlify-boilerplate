@@ -19,40 +19,16 @@
   --color7: #6c6c6c;
   --color15: #ffffff;
 
-  /* Verdandi Alter Colors */
-  --d-00: #050607;
-  --d-01: #111316;
-  --d-02: #1b1f23;
-  --d-03: #262b30;
-  --d-04: #323940;
-  --d-05: #424a52;
-  --d-06: #5b646c;
-  --d-07: #7e868d;
-  --d-08: #a1a8ae;
-  --d-09: #c0c5ca;
-  --d-10: #d6dade;
-
-  --l-00: #f8f9fa;
-  --l-01: #e9ecee;
-  --l-02: #dce0e4;
-  --l-03: #cfd4d9;
-  --l-04: #bfc6cd;
-  --l-05: #adb5bd;
-  --l-06: #939ba4;
-  --l-07: #727981;
-  --l-08: #51575e;
-  --l-09: #353a3f;
-  --l-10: #212529;
-
   --color-body: var(--l-00);
   --color-text: var(--l-10);
   --color-text-dim: var(--l-07);
   --color-text-dimmer: var(--l-03);
   --color-divider: var(--l-02);
 
-  --font-mono: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
+  --font-mono: "SF Mono", "Menlo", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", Courier, monospace;
-  --font-sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --font-serif: Charter, Georgia, serif;
 }
 
@@ -76,7 +52,7 @@ body {
   font-family: var(--font-sans);
   line-height: 1.5;
   color: var(--color-text);
-  margin: 1rem;
+  margin: 0.75rem;
 }
 
 h1,
@@ -89,45 +65,56 @@ header,
 nav,
 footer {
   font-family: var(--font-sans);
-  font-weight: 500;
   color: var(--color15);
 }
 
 h1 {
   font-size: xx-large;
-  font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.25;
+  margin: 0;
   padding-bottom: 0.25rem;
   margin-bottom: 0.25rem;
-  border-bottom: 1px solid var(--color-divider);
+  border-bottom: 1px dashed var(--color-divider);
 }
 h2 {
   font-size: x-large;
   line-height: 1.25;
-  margin: 2rem 0 1rem;
+  margin: 1rem 0 1rem;
 }
 h3 {
-  margin: 2rem 0 1rem;
-  font-size: large;
+  margin: 1rem 0 1rem;
+  margin-bottom: 0;
+  font-size: medium;
   line-height: 1.5;
 }
 h4 {
-  margin: 2rem 0 1rem;
-  font-size: medium;
+  margin: 1rem 0 1rem;
+  font-size: small;
+  text-transform: uppercase;
 }
 h5 {
-  margin: 2rem 0 1rem;
-  font-size: small;
+  margin: 1rem 0 1rem;
+  font-size: x-small;
+  text-transform: uppercase;
 }
 h6 {
-  margin: 2rem 0 1rem;
+  margin: 1rem 0 1rem;
   font-size: x-small;
 }
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 
-small,
+small {
+  color: var(--color-text-dim);
+  /* font-family: var(--font-mono); */
+  font-size: smaller;
+}
+
 nav {
   color: var(--color-text-dim);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: smaller;
 }
 
@@ -137,6 +124,7 @@ blockquote {
 }
 
 pre {
+  font-size: smaller;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -148,17 +136,17 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  line-height: 1.25;
-  border-top: 1px dashed var(--color-divider);
-  border-bottom: 1px dashed var(--color-divider);
+  padding: 0.75rem 1rem;
+  border: 1px dashed var(--color-divider);
 }
 code {
   font-family: var(--font-mono);
 }
 :not(pre) > code {
   color: var(--color-keyword);
+  background: var(--color8);
+  padding: 0 2px;
+  border-radius: 2px;
 }
 
 /* LINKS */
@@ -182,21 +170,26 @@ small a:not(:hover) {
 
 /* HEADER */
 
+body > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
 header > em {
-  font-family: var(--font-sans);
-  color: var(--color-text);
+  color: var(--color-text-dim);
   font-weight: normal;
   font-style: normal;
-  margin: 0.5rem 0;
+  font-size: smaller;
 }
 
 header nav {
   text-transform: lowercase;
-  font-weight: 500;
 }
 header nav ul {
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0;
+  text-align: right;
 }
 header nav li {
   display: inline-block;
@@ -212,19 +205,31 @@ header nav li a[data-current="current item"] {
 
 /* POSTS LIST AND ARTICLE */
 
-main > section > article {
-  margin-bottom: 2rem;
+main {
+  /* padding: 0.75rem 1rem; */
+  /* background-color: var(--background); */
+  /* border-radius: 8px; */
+}
+
+main > section > article:not(:last-child) {
+  margin-bottom: 1rem;
 }
 main > section > article > h3 {
+  font-size: 1rem;
+  /* color: var(--color-text); */
   margin-bottom: 0;
   line-height: inherit;
+}
+main > section > article > p {
+  font-size: smaller;
+  color: var(--color-text-dim);
 }
 main > section > article > nav > a {
   color: var(--color-text-dim);
 }
 
 main header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 main header small {
@@ -233,6 +238,7 @@ main header small {
 
 main header p {
   font-size: larger;
+  margin: 1rem 0;
   font-family: var(--font-sans);
   color: var(--color-text-dim);
 }
@@ -279,7 +285,7 @@ a[rel="tag"]:hover {
 } */
 
 @media screen and (min-width: 768px) {
-  body {
-    /* font-size: 110%; */
-  }
+  /* body { */
+  /*   font-size: 125%; */
+  /* } */
 }

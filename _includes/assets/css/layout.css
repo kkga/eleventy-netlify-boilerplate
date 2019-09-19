@@ -1,5 +1,5 @@
 :root {
-  --content-width: 66ch;
+  --content-width: 64ch;
 }
 
 body {
@@ -15,47 +15,13 @@ footer {
   grid-column: 2;
 }
 
-main {
-  grid-column: 2 / 5;
-  padding: 4em 0;
-}
-
-main article {
-  display: grid;
-  grid-column-gap: 1rem;
-  grid-template-columns: var(--content-width) 1fr 1fr;
-  /* align-items: baseline; */
-}
-
-main article header {
-  grid-column: 1;
-}
-main article h1,
-main article h2,
-main article h3,
-main article h4,
-main article h5,
-main article h6,
-main article p {
-  grid-column: 1;
-}
-
-main article pre {
-  grid-column: 1 / span 2;
-}
-
-main article .note,
-main article .warning {
-  grid-column: 2 / 4;
-}
-
 main :first-child,
 main > article :first-child {
   margin-top: 0;
 }
 
 hr {
-  margin: 1em 0;
+  margin: 1rem 0;
   border: none;
-  border-bottom: 1px solid var(--color-divider);
+  border-bottom: 1px dashed var(--color-divider);
 }

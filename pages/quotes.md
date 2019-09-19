@@ -1,8 +1,5 @@
 ---
 title: Quotes
-tags: nav
-navtitle: Quotes
-navorder: 2
 subtext: Random quotes I saved over time
 section: quotes
 permalink: /quotes/index.html
