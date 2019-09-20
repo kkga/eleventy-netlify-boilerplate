@@ -14,11 +14,6 @@ In this post you'll learn how to create your own custom resources to hold data o
 
 We'll start with the most basic example and then dig into how you can take it one step further by creating a fully dynamic inspector interface that changes depending on which variables are set in the resource.
 
-<details>
-<summary>here's summary</summary>
-some details
-</details>
-
 ## 1. Basic example
 
 As a basic example, we're going to create a character class resource that defines a variety of stats for different playable classes (such as Warrior, Wizard, etc...).

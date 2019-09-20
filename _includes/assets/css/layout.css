@@ -1,5 +1,5 @@
 :root {
-  --content-width: 64ch;
+  --content-width: 80ch;
 }
 
 body {
@@ -23,5 +23,5 @@ main > article :first-child {
 hr {
   margin: 1rem 0;
   border: none;
-  border-bottom: 1px dashed var(--color-divider);
+  border-bottom: 1px solid var(--color-divider);
 }
