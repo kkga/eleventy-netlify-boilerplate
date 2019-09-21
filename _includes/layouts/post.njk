@@ -7,20 +7,20 @@ section: post
   <header>
     <h1>{{ title }}</h1>
     <small>
-      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
       {% if tags %}
-      <span>&middot;</span>
       {% for tag in tags %} {%- if tag != "post" -%} {% set tagUrl %}/tags/{{
         tag
       }}/{% endset %}
       <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
+      <span>&middot;</span>
       {%- endif -%} {% endfor %} {% endif %}
+      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
     </small>
-    {% if summary %}
-      <p>{{ summary }}</p>
-    {% endif %}
   </header>
-  
+
+  {% if summary %}
+    <p>{{ summary }}</p>
+  {% endif %}
 
   {{ layoutContent | safe }}
 </article>

@@ -19,17 +19,18 @@
   --color7: #6c6c6c;
   --color15: #ffffff;
 
-  --color-body: var(--color15);
-  --color-text: var(--color0);
+  --color-body: var(--background);
+  --color-text: var(--foreground);
+  --color-heading: var(--foreground);
   --color-text-dim: var(--color7);
-  --color-text-dimmer: var(--color0);
+  --color-text-dimmer: var(--color8);
   --color-divider: var(--color0);
   --color-keyword: var(--color-text);
+  --color-link: var(--color2);
 
-  --font-mono: "Iosevka Aile";
-  /* --font-mono: "Iosevka Extended"; */
-  --font-sans: var(--font-mono);
-  --font-serif: var(--font-mono);
+  --font-mono: "Iosevka Extended";
+  --font-sans: "Iosevka Aile";
+  /* --font-serif: var(--font-mono); */
 }
 
 /* @media (prefers-color-scheme: dark) { */
@@ -76,32 +77,44 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  margin: 2rem 0 1rem;
-  padding: 1rem 0;
+  margin: 4rem 0 0.5rem;
+  padding-bottom: 0.5rem;
   text-transform: uppercase;
-  border-bottom: 3px double;
-}
-h3 {
-  margin: 2rem 0 1rem;
-  padding: 1rem 0;
   border-bottom: 1px solid;
 }
+h2 + p {
+  margin-top: 0;
+}
+h3 {
+  margin: 4rem 0 0rem;
+  /* text-transform: uppercase; */
+}
+h3 + p {
+  margin-top: 0;
+}
 h4 {
-  margin: 2rem 0 1rem;
-  /* font-size: small; */
-  text-transform: uppercase;
+  margin: 4rem 0 1rem;
+}
+h4 + p {
+  margin-top: 0;
 }
 h5 {
   margin: 2rem 0 1rem;
   font-size: x-small;
   text-transform: uppercase;
 }
+h5 + p {
+  margin-top: 0;
+}
 h6 {
   margin: 1rem 0 1rem;
   font-size: x-small;
 }
+h6 + p {
+  margin-top: 0;
+}
 p {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 small {
@@ -117,16 +130,20 @@ blockquote {
 
 ul {
   padding-left: 1rem;
+  list-style: square;
 }
+ul li::marker {
+  /* content: "- "; */
+}
+
 hr {
   margin: 2rem 0;
   border: none;
-  border-bottom: 1px solid var(--color-divider);
+  border-bottom: 1px solid;
 }
 
 pre {
   margin: 2rem 0;
-  /* font-size: smaller; */
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -138,16 +155,23 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding: 0.75rem 1rem;
-  border: 1px dashed var(--color-divider);
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--color-text);
 }
 code {
   font-family: var(--font-mono);
 }
 :not(pre) > code {
   color: var(--color-keyword);
-  padding: 0 2px;
-  outline: 1px dotted;
+  background-color: var(--color-text-dimmer);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  margin: 1rem 0;
 }
 
 /* LINKS */
@@ -207,31 +231,63 @@ header nav li a[data-current="current item"] {
   text-decoration: underline;
 }
 
-/* POSTS LIST AND ARTICLE */
+/* POSTS LIST */
 
-main {
-  /* padding: 0.75rem 1rem; */
-  /* background-color: var(--background); */
-  /* border-radius: 8px; */
+.postslist {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
-main > section > article:not(:last-child) {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+.postslist-item {
+  padding: 0 0.5rem 0.5rem 0;
+  border-right: 1px solid;
   border-bottom: 1px solid;
+  /* display: grid; */
+  /* column-gap: 1rem; */
+  /* grid-template-columns: 1fr auto; */
+  grid-template-areas:
+    "title time"
+    "desc  tags";
 }
-main > section > article > h3 {
-  margin: 0;
-  border: none;
+
+.postslist-item h3 {
+  grid-area: title;
+}
+.postslist-item p {
+  display: none;
+  grid-area: desc;
+}
+
+.postslist-item time {
+  grid-area: time;
+  justify-self: end;
+}
+
+.postslist-item ul {
+  grid-area: tags;
+  justify-self: end;
+  list-style: none;
   padding: 0;
+  display: flex;
+  gap: 1rem;
+  display: none;
 }
+
+/* ARTICLE */
 
 main header {
+  padding: 0.5rem 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 main header small {
   display: block;
+  text-transform: lowercase;
 }
 
 main header p {
@@ -240,11 +296,6 @@ main header p {
 
 main > section > article > * {
   margin: 0;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
 }
 
 /* Article Containers */

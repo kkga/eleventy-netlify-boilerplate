@@ -13,17 +13,18 @@
       {{ post.data.summary }}
     </p>
     {% endif %}
-    <small>
-      <time datetime="{{ post.date | machineDate }}">
-        {{ post.date | readableDate }}
-      </time>
-      {% if post.data.tags %}
-      <span>&middot;</span>
-      {% for tag in post.data.tags %} {%- if tag != "post" -%} {% set tagUrl
-      %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
-      {%- endif -%} {% endfor %} {% endif %}
-    </small>
+    <time datetime="{{ post.date | machineDate }}">
+      {{ post.date | readableDate }}
+    </time>
+    {% if post.data.tags %}
+    <ul>
+    {% for tag in post.data.tags %} {%- if tag != "post" -%} {% set tagUrl
+    %}/tags/{{ tag }}/{% endset %}
+    <li><a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a></li>
+    {%- endif -%} {% endfor %}
+    </ul>
+    {% endif %}
+
   </article>
   {% endfor %}
 </section>

@@ -24,8 +24,6 @@ As a basic example, we're going to create a character class resource that define
 
 Start by creating a script file called `CharacterStats.gd` in the Filesystem dock.
 
-![Creating a resource script](/static/img/godot-res-create-script.png)
-
 We want this script to extend Godot's `Resource` type. Additionally, we can register the class globally as `CharacterStats` to utilize Godot's auto-completion when we'll be referencing it from other scripts.
 
 ```gdscript

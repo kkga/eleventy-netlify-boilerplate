@@ -105,13 +105,22 @@ module.exports = function(eleventyConfig) {
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItContainer = require("markdown-it-container");
+  let markdownVideo = require("markdown-it-video");
   let options = {
     html: true,
     breaks: true,
     linkify: true,
     typographer: true
   };
-  let markdownLib = markdownIt(options).use(markdownItContainer, "note");
+  let markdownVideoOptions = {
+    youtube: { width: 640, height: 390 },
+    vimeo: { width: 500, height: 281 },
+    vine: { width: 600, height: 600, embed: "simple" },
+    prezi: { width: 550, height: 400 }
+  };
+  let markdownLib = markdownIt(options)
+    .use(markdownItContainer, "note")
+    .use(markdownVideo, markdownVideoOptions);
   eleventyConfig.setLibrary("md", markdownLib);
 
   return {
