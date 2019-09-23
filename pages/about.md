@@ -10,15 +10,15 @@ date: Last Modified
 
 ![my face][my-face]
 
-### My life so far
+## My life so far
 
 Overall, my life seems to be worth living.
 
-### Work
+## Work
 
 Currently product designer at [Webflow](https://webflow.com/) — a tool that makes producing for web more approachable. Mostly trying to figure out how to create the right visual tools for designers.
 
-### Projects at Webflow
+## Projects at Webflow
 
 <small>2015–2019</small>
 
@@ -33,7 +33,7 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [flexbox.webflow.com](https://flexbox.webflow.com) (launch page)
   - [flexboxgame.com](https://www.flexboxgame.com/) (flexbox game built in Webflow)
 
-### Stampsy
+## Stampsy
 
 <small>2012–2014</small>
 
@@ -43,7 +43,7 @@ Currently product designer at [Webflow](https://webflow.com/) — a tool that ma
   - [tnw.to/i4tHc](http://tnw.to/i4tHc) (article on TNW)
 - In 2012, before becoming a web platform, Stampsy was an experimental iPad app for creating stories with a simple design editor. I designed and prototyped a lot of its touch-based interactions with different tools and codez.
 
-### Misc
+## Misc
 
 - At some point I designed a [UI theme](https://github.com/kkga/spacegray) for Sublime Text — a popular code editor. It's been installed by [~400k users](https://packagecontrol.io/packages/Theme%20-%20Spacegray) and has ~7k stars on GitHub.
 - During 2010–2012 I've freelanced and worked with various international startups, but most of the time I was posting [useless stuff](https://dribbble.com/gadzhi) on Dribbble.

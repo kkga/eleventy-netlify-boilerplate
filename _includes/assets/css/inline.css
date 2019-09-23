@@ -26,9 +26,9 @@
   --color-text-dimmer: var(--color8);
   --color-divider: var(--color0);
   --color-keyword: var(--color-text);
-  --color-link: var(--color2);
+  --color-link: var(--color10);
 
-  --font-mono: "Iosevka Extended";
+  --font-mono: "Iosevka";
   --font-sans: "Iosevka Aile";
   /* --font-serif: var(--font-mono); */
 }
@@ -87,7 +87,7 @@ h2 + p {
 }
 h3 {
   margin: 4rem 0 0rem;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 h3 + p {
   margin-top: 0;
@@ -155,8 +155,8 @@ pre {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  padding-left: 1.5rem;
-  border-left: 1px solid var(--color-text);
+  /* padding-left: 1rem; */
+  /* border-left: 0.5px dashed var(--color-text); */
 }
 code {
   font-family: var(--font-mono);
