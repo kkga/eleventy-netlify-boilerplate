@@ -28,8 +28,8 @@
   --color-keyword: var(--color-text);
   --color-link: var(--color10);
 
-  --font-mono: "Iosevka";
-  --font-sans: "Iosevka Aile";
+  --font-mono: "Iosevka Web";
+  --font-sans: "Iosevka Aile Web";
   /* --font-serif: var(--font-mono); */
 }
 
