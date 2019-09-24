@@ -274,29 +274,53 @@ header nav li a[data-current="current item"] {
   display: none;
 }
 
-/* ARTICLE */
+/* HEADER */
 
-main header {
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title time"
+    "summary summary";
   padding: 0.5rem 0;
   border-top: 1px solid;
   border-bottom: 1px solid;
   margin-bottom: 4rem;
+}
+.header-title {
+  grid-area: title;
+}
+.header-time {
+  grid-area: time;
+}
+.header-summary {
+  grid-area: summary;
+}
+
+.post-nav {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-bottom: 4rem;
 }
-
-main header small {
-  display: block;
-  text-transform: lowercase;
-}
-
-main header p {
-  margin: 2rem 0;
-}
-
-main > section > article > * {
+.post-tags {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
+.post-tags-item {
+  display: inline-block;
+}
+.post-tags-item:not(:last-child)::after {
+  content: ",\a0";
+}
+/* .post-tags-item a:not(:hover) { */
+/*   text-decoration: none; */
+/* } */
 
 /* Article Containers */
 

@@ -4,27 +4,24 @@ section: post
 ---
 
 <article>
-  <header>
-    <h1>{{ title }}</h1>
-    <small>
-      {% if tags %}
-      {% for tag in tags %} {%- if tag != "post" -%} {% set tagUrl %}/tags/{{
-        tag
-      }}/{% endset %}
-      <a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a>
-      <span>&middot;</span>
-      {%- endif -%} {% endfor %} {% endif %}
-      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
-    </small>
+  <header class="header">
+    <h1 class="header-title">{{ title }}</h1>
+    <span class="header-summary">{{ summary }}</span>
+    <time class="header-time" datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time>
+    {% if summary %}
+    {% endif %}
   </header>
-
-  {% if summary %}
-    <p>{{ summary }}</p>
-  {% endif %}
 
   {{ layoutContent | safe }}
 </article>
-<hr />
-<nav>
+<nav class="post-nav">
   <a href="{{ '/writing/' | url }}">← Writing index</a>
+  {% if tags %}
+  <ul class="post-tags">
+  {% for tag in tags %} {%- if tag != "post" -%}
+  {% set tagUrl %}/tags/{{tag}}/{% endset %}
+  <li class="post-tags-item"><a href="{{ tagUrl | url }}" rel="tag">#{{ tag }}</a></li>
+  {%- endif -%} {% endfor %}
+  </ul>
+  {% endif %}
 </nav>
