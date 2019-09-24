@@ -169,6 +169,7 @@ code {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   vertical-align: bottom;
   margin: 1rem 0;
