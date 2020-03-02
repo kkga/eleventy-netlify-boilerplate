@@ -43,6 +43,8 @@ var description: = "Character description"
 
 ### 1.2. Exporting script variables
 
+TODO: remove this section and just start with empty variables
+
 Prefixing a variable with `export` keyword serializes it in the Godot Inspector for easier editing. Godot serializes a variable based on its type, so a `String` will be show as a text field, `bool` will be a checkbox and so on.
 
 ```gdscript/3,4
@@ -54,10 +56,6 @@ export var description: = "Character description"
 ```
 
 ![Exported variables in Godot inspector](/static/img/godot-resources-1.gif)
-
-::: note
-We're using something interesting here, so check this out...
-:::
 
 In this case the variable type is inferred from the value, but if we were to declare an empty variable and export it, we could write it like so:
 
@@ -79,9 +77,7 @@ export(String, MULTILINE) var description
 
 [godot export docs]: https://godot.readthedocs.io/en/latest/getting_started/scripting/gdscript/gdscript_exports.html#introduction-to-exports
 
-### 1.3. Adding character stats
-
-Let's add variables for all character stats we're planning to use in our game.
+Now we can add variables for all character stats we're planning to use in our game.
 
 ```gdscript
 extends Resource
