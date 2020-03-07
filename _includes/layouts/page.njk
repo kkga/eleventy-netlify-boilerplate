@@ -14,11 +14,11 @@ section: page
   
   <br>
 
-  <span class="header-time">
+  <small class="header-time">
     updated: <time datetime="{{ page.date | machineDate }}">
       {{page.date | readableDate}}
       </time>
-  </span>
+  </small>
 </header>
 
 {{ layoutContent | safe }}
