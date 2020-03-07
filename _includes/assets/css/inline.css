@@ -61,20 +61,16 @@ footer {
 h1 {
   margin: 0;
   font-weight: bold;
-  text-transform: uppercase;
 }
 h2 {
   margin: 4rem 0 0.5rem;
   padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
 }
 h2 + p {
   margin-top: 0;
 }
 h3 {
   margin: 4rem 0 0rem;
-  text-transform: uppercase;
 }
 h3 + p {
   margin-top: 0;
@@ -152,7 +148,6 @@ code {
   color: var(--color-keyword);
   background-color: var(--color-text-dimmer);
   padding: 0 4px;
-  border-radius: 2px;
 }
 
 img {
