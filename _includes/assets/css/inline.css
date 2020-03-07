@@ -28,24 +28,11 @@
   --color-keyword: var(--color-text);
   --color-link: var(--color10);
 
-  --font-mono: "Iosevka Web";
-  --font-sans: "Iosevka Aile Web";
-  /* --font-serif: var(--font-mono); */
+  --font-mono: monospace;
+  --font-sans: sans-serif;
 }
 
-/* @media (prefers-color-scheme: dark) { */
-/*   :root { */
-/*     --color-body: var(--background); */
-/*     --color-text: var(--foreground); */
-/*     --color-bright: var(--color15); */
-/*     --color-text-dim: var(--color7); */
-/*     --color-text-dimmer: var(--foreground); */
-/*     --color-divider: var(--color7); */
-/*     --color-container: var(--background); */
-/*     --color-link: var(--foreground); */
-/*     --color-keyword: var(--foreground); */
-/*   } */
-/* } */
+
 
 /* TYPOGRAPHY */
 
