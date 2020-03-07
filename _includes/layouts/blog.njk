@@ -9,7 +9,9 @@ permalink: /writing/index.html
 
 	{% if subtext %} 
 	<small>
-	  {{subtext}}{% if date %}. Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>.{% endif %}
+	  {{subtext}}
+	  {% if date %}. Updated <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>.
+	  {% endif %}
 	</small>
 	{% endif %}
 </header>

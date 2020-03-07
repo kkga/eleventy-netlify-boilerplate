@@ -11,14 +11,11 @@ section: page
     {{ subtext }}
   </span>
   {% endif %}
-  
   <br>
-
-  <small class="header-time">
-    updated: <time datetime="{{ page.date | machineDate }}">
+  
+  Updated: <time datetime="{{ page.date | machineDate }}">
       {{page.date | readableDate}}
       </time>
-  </small>
 </header>
 
 {{ layoutContent | safe }}
